@@ -1,0 +1,391 @@
+*{
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+body{
+    background: #EEF1FF;
+    padding-left: 30rem;
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;
+    bottom: 0;
+    background-color: #B1B2FF;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 8rem 2rem;
+    width: 30rem;
+}
+header .logo{
+    text-transform: capitalize;
+    color:#EEF1FF;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+header .logo span{
+    color:#b83a3a;
+    text-transform: capitalize;
+}
+
+header .navbar a{
+    display: block;
+    font-size: 2.6rem;
+    font-family: serif;
+    color: #EEF1FF;
+    margin: 2rem 0;
+}
+
+header .navbar a:hover{
+    letter-spacing: .3rem;
+    color:#b83a3a;
+    transition: 2.2rem;
+}
+
+header .social a{
+    font-size: 2.5rem;
+    color:#F9F9F9;
+    margin: 0 .6rem;
+
+}
+header .social a:hover{
+    color: #b83a3a;
+    transition: 2rem;
+}
+.menu-bars i{
+    position: fixed;
+    color: #B1B2FF;
+    z-index: 1000;
+    top:1rem;right: 1rem;
+    background-color: #b83a3a;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 2.5rem 5%;
+    min-height: 100vh;
+}
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.home .image{
+    flex:1 1 40rem
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+.home .content .hi{
+    font-size: 3.5rem;
+    color:#b83a3a;
+}
+.home .content h3{
+    flex: 1 1 40rem;
+    color:#111;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.home .content h3 span{
+    /* flex: 1 1 40rem; */
+    color:#b83a3a;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.home .content .info{
+    /* flex: 1 1 40rem; */
+    color:#111;
+    font-size: 2.5rem;
+    padding: 5px;
+}
+.home .content .text{
+    /* flex: 1 1 40rem; */
+    color:#111;
+    font-size: 1.7rem;
+    padding: 5px;
+}
+
+.btn{
+    width: 110px;
+    color:#111;
+    background-color: #b83a3a;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 20px;
+    transition: all 2s linear;
+}
+.btn:hover{
+    transition-duration: 1s;
+    background-color: #AAC4FF;
+
+}
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color:#111;
+    text-transform: capitalize;
+}
+.heading span{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color:#b83a3a;
+    text-transform: capitalize;
+    word-spacing: 2cm;
+}
+
+.about-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.about-info .image{
+    flex: 1 1 25rem;
+}
+.about-info .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+
+}
+
+.about-info .content{
+    flex :1 1 25rem;
+    font-size: 2rem;
+    color: #111;
+}
+.about-info .content .box span{
+    color:#b83a3a;
+    font-size:2.5rem ;
+    word-spacing: 10cm;
+}
+.service .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.service .box-container .box{
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    background:#D2DAFF;
+    border-radius: .5rem;
+    box-shadow: .5rem 1rem rgba(0,0,0,0.02);
+}
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2rem;
+    color:#EEF1FF;
+    background-color: #b83a3a;
+    border-radius: 50%;
+}
+.service .box-container .box i:hover{
+    transition-duration: 1s;
+    color: #b83a3a;
+    background-color: cornflowerblue;
+    transition: all 2s linear;
+}
+.service .box-container .box h4{
+    font-size: 2rem;
+    color: rgba(0,0,0,0.6);
+    padding-top: 1rem;
+}
+.service .box-container .box p{
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.7);
+    padding-top: 1rem;
+}
+.service h2{
+    font-size: 2.5rem;
+    color: rgba(0,0,0,0.6);
+    padding-top: 1rem;
+}
+.hobbies h4 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.hobbies p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.hobbies p:before {
+    content: '•';
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.hobbies p:last-child {
+    margin-bottom: 0;
+    padding-left: 0;
+    font-style: italic;
+}
+
+.projects .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.projects .box-container .box{
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    background:#D2DAFF;
+    border-radius: .5rem;
+    box-shadow: .5rem 1rem rgba(0,0,0,0.02);
+}
+.projects .box-container .box h4{
+    font-size: 3rem;
+    color: rgba(0,0,0,0.6);
+    padding-top: 1rem;
+}
+.projects .box-container .box p{
+    font-size: 2rem;
+    color: rgba(0,0,0,0.7);
+    padding-top: 1rem;
+}
+.contact .contact-container{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.contact .contact-container .contact-icon{
+    text-align: center;
+    flex: 1 1 25rem;
+    padding: 2rem;
+    background: #D2DAFF;
+    border-radius: .5rem;
+    box-shadow: .5rem 1rem rgba(0,0,0,0.02);
+}
+.contact .contact-container .contact-icon i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#EEF1FF;
+    background-color: #b83a3a;
+    border-radius: 50%;
+}
+.contact .contact-container .contact-icon i:hover{
+    transition-duration: 1s;
+    color: #b83a3a;
+    background-color: #B1B2FF;
+    transition: all 2s linear;
+}
+.contact .contact-container .contact-icon h4{
+    font-size: 2.5rem;
+    line-height: 1.5px;
+    color: rgba(0,0,0,0.6);
+    padding-top: 1rem;
+    letter-spacing: 0.4pc;
+}
+.contact .contact-container .contact-icon p{
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.7);
+    padding-top: 1rem;
+}
+.footer{
+
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+    color:rgba(0,0,0,0.6);
+    background-color: #D2DAFF;
+
+}
+.footer span{
+    color:#b83a3a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 50%;
+
+    }
+    body{
+        padding: 0;
+
+    }
+    .menu-bars i{
+        display: initial;
+    }
+    header{
+        left:-110%;
+    }
+    header.active{
+        left :0%;
+    }
+
+}
